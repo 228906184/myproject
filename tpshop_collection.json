@@ -36,7 +36,7 @@
 							},
 							{
 								"key": "Cookie",
-								"value": "PHPSESSID=91n52pocmtijrcc5jl2fjbefh1",
+								"value": "PHPSESSID=g1blqjv3e0fovpnrgqd6o6mai6",
 								"type": "text"
 							}
 						],
@@ -45,7 +45,7 @@
 							"urlencoded": [
 								{
 									"key": "nickname",
-									"value": "tom1234",
+									"value": "tom123456",
 									"type": "text"
 								},
 								{
@@ -55,17 +55,17 @@
 								},
 								{
 									"key": "mobile",
-									"value": "18638384381",
+									"value": "18679558888",
 									"type": "text"
 								},
 								{
 									"key": "email",
-									"value": "1289061171@qq.com",
+									"value": "1289161871@qq.com",
 									"type": "text"
 								},
 								{
 									"key": "qq",
-									"value": "1289061171",
+									"value": "1289161871",
 									"type": "text"
 								},
 								{
@@ -113,7 +113,7 @@
 							{
 								"key": "Cookie",
 								"type": "text",
-								"value": " PHPSESSID=5ogl6j6o1hv7n1k5me2f4n8h15"
+								"value": "PHPSESSID=g1blqjv3e0fovpnrgqd6o6mai6"
 							},
 							{
 								"key": "",
@@ -126,14 +126,15 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "id",
-									"value": "2659",
-									"type": "text"
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
 								}
 							]
 						},
 						"url": {
-							"raw": "htto://localhost/index.php/Admin/user/ajax_delete",
+							"raw": "htto://localhost/index.php/Admin/user/ajax_delete?id=2655",
 							"protocol": "htto",
 							"host": [
 								"localhost"
@@ -143,6 +144,12 @@
 								"Admin",
 								"user",
 								"ajax_delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2655"
+								}
 							]
 						}
 					},
@@ -225,7 +232,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost/index.php/Admin/user/detail/?id=2658",
+							"raw": "http://localhost/index.php/Admin/user/detail/?id=2655",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -241,7 +248,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "2657"
+									"value": "2655"
 								}
 							]
 						}
@@ -250,42 +257,6 @@
 				}
 			],
 			"description": "对会员管理的增删改查的接口进行测试"
-		},
-		{
-			"name": "用户管理",
-			"item": [
-				{
-					"name": "修改头像",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
-								"type": "text"
-							},
-							{
-								"key": "Cookie",
-								"value": "PHPSESSID=91n52pocmtijrcc5jl2fjbefh1",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": []
-						},
-						"url": {
-							"raw": ""
-						}
-					},
-					"response": []
-				}
-			],
-			"protocolProfileBehavior": {}
 		}
 	]
 }
