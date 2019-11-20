@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "7ae07de6-3a2d-45de-9238-a129faeddafd",
+		"name": "tpshop商城",
+		"description": "tpshop商城是一个开源的电子商城，通过是互联网来对商品进行销售与业务流程电子化",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "会员管理",
+			"item": [
+				{
+					"name": "添加会员",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cd1d8bab-18e7-45bf-ac48-02144668e99e",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "PHPSESSID=91n52pocmtijrcc5jl2fjbefh1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nickname",
+									"value": "tom123",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "18633218888",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "1289061871@qq.com",
+									"type": "text"
+								},
+								{
+									"key": "qq",
+									"value": "1289061871",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "女",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/index.php/admin/User/add_user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"index.php",
+								"admin",
+								"User",
+								"add_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除会员",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f2c152a0-213f-4cc2-878b-39c328de192b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": " PHPSESSID=5ogl6j6o1hv7n1k5me2f4n8h15"
+							},
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2659",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "htto://localhost/index.php/Admin/user/ajax_delete",
+							"protocol": "htto",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"index.php",
+								"Admin",
+								"user",
+								"ajax_delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "修改会员",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5b220c55-c6d4-4a30-889e-b9da792ea7fa",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "PHPSESSID=g1blqjv3e0fovpnrgqd6o6mai6",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "229014%40qq.com",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "18633456784",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "229014",
+									"type": "text"
+								},
+								{
+									"key": "password2",
+									"value": "229014",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "qq",
+									"value": "229014",
+									"type": "text"
+								},
+								{
+									"key": "is_lock",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "is_distribut",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/index.php/Admin/user/detail/?id=2658",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"",
+								"index.php",
+								"Admin",
+								"user",
+								"detail",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2658"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "对会员管理的增删改查的接口进行测试"
+		}
+	]
+}
